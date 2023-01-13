@@ -1,0 +1,8 @@
+const express = require('express')
+const app = express()
+app.get('/hello', (req, res) => {
+    res.send('hello World')
+})
+app.listen(1337, () => {
+    console.log('server started on 1337')
+})
